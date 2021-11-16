@@ -145,7 +145,7 @@ const imageLightOptions: DropdownOption[] = [
     { text: 'Vercel', value: 'https://assets.vercel.com/image/upload/front/assets/design/vercel-triangle-black.svg' },
     { text: 'Next.js', value: 'https://assets.vercel.com/image/upload/front/assets/design/nextjs-black-logo.svg' },
     { text: 'Hyper', value: 'https://assets.vercel.com/image/upload/front/assets/design/hyper-color-logo.svg' },
-    { text: 'Logo', value: 'https://ismlhbb.xyz/images/logo.svg' },
+    { text: 'Logo', value: 'https://ismlhbb.xyz/images/logo.png' },
 ];
 
 const imageDarkOptions: DropdownOption[] = [
@@ -153,7 +153,7 @@ const imageDarkOptions: DropdownOption[] = [
     { text: 'Vercel', value: 'https://assets.vercel.com/image/upload/front/assets/design/vercel-triangle-white.svg' },
     { text: 'Next.js', value: 'https://assets.vercel.com/image/upload/front/assets/design/nextjs-white-logo.svg' },
     { text: 'Hyper', value: 'https://assets.vercel.com/image/upload/front/assets/design/hyper-bw-logo.svg' },
-    { text: 'Logo', value: 'https://ismlhbb.xyz/images/logo.svg' },
+    { text: 'Logo', value: 'https://ismlhbb.xyz/images/logo.png' },
 ];
 
 const widthOptions = [
@@ -205,10 +205,10 @@ const App = (_: any, state: AppState, setState: SetState) => {
     const {
         fileType = 'png',
         fontSize = '100px',
-        theme = 'light',
+        theme = 'dark',
         md = true,
-        text = '**Hello** World',
-        images=[imageLightOptions[0].value],
+        text = 'ismlhbb/**...**',
+        images=[imageDarkOptions[0].value],
         widths=[],
         heights=[],
         showToast = false,
